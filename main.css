@@ -1,0 +1,60 @@
+body{
+    height: 150vh;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td{
+    border: 4px solid red;
+    width: 14%;
+    color: green;
+    font-family: cursive;
+    font-size: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+h1{
+    font-family: cursive;
+    font-size: 40px;
+    color: green;
+    text-align: center;
+    font-weight: 700;
+}
+.nagłówek{
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    font-family: cursive;
+    font-size: 25px;
+    color: green;
+    text-align: center;
+}
+td:not(.nagłówek, .formularz){
+    height: 233px;
+    cursor: pointer;
+}
+td:empty{
+    cursor: default;
+}
+.hidden{
+    display: none;
+}
+form{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+form tr{
+    height: 50px;
+}
+.formularz{
+    height: 100%;
+    font-size: 30px;
+    background-color: white;
+    color: green;
+}
